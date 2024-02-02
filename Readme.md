@@ -2,8 +2,7 @@
 
 * Студент: [Владимир Шишко](https://up.htmlacademy.ru/htmlcss/39/user/2496763).
 * Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
-
-
+* Сайт: [Мой проект Селона](https://vladimirshishko.github.io/2496763-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
