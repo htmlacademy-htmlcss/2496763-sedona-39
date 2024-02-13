@@ -14,7 +14,7 @@
         <ul class="navigation-list">
 
           <li class="navigation_item">
-            <a class="navigation_link navigation_link_current" href="index.html">Главная</a>
+            <a class="navigation_link" href="index.html">Главная</a>
           <li class="navigation_item">
             <a class="navigation_link" href="about_sedona.html">О Седоне</a>
           </li>
@@ -35,6 +35,7 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span class="likes-number">12</span>
             </a>
           </li>
           <li class="navigation_item">
@@ -131,15 +132,18 @@
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать на весь экран</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
+        <ul class="preview-list">
+          <li class="preview-item">
+            <a class="preview-item-link preview-item-selected" href="#">Карточки</a>
+          </li>
+          <li class="preview-item">
+            <a class="preview-item-link" href="#">По одной</a>
+          </li>
+          <li class="preview-item">
+            <a class="preview-item-link" href="#">Список</a>
+          </li>
+
+
       </section>
       <section class="description">
         <h2>Найденные отели</h2>
@@ -222,8 +226,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
+            <span>...</span>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
@@ -270,14 +273,17 @@
             </a>
           </li>
         </ul>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts-phone">
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-      </section>
+        <section class="contacts">
+          <h2 class="contact-title">Контакты</h2>
+          <address class="contacts-address">
+            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+
+        <section class="site">
+          <h2 class="visually-hidden">Сайт разработчика</h2>
+          <img class="logo-footer" src="#" alt="Посетить сайт разработчика HTML Academy">
+        </section>
 
 
     </footer>
