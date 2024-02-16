@@ -37,14 +37,15 @@ body {
   text-decoration: none;
 }
 
-/*
-.main-index {
+
+.hero {
   color: #000000;
-  background-color: #ffffff;
+  background-color:#F2F2F2;
+  ;
   background-image: url(../images/rock-sedona.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-}*/
+}
 
 .description h2,
 .services-title-1 {
@@ -99,7 +100,6 @@ line-height: 21px;
 text-align: center;
 }
 
-.side-title,
 .side-description {
   color: #FFFFFF;
   background: #82B3D3;
