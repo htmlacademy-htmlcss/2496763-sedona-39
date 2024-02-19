@@ -19,9 +19,23 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #242424;
-  background-color: #fbf7f4;
+  background-color: #FFFFFF;
 
 }
+
+/*
+.button {
+color: #756157;
+font-family: inherit;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+text-decoration: none;
+}
+*/
+
 
 .page-header {
   color: #000000;
@@ -40,30 +54,40 @@ body {
 
 .hero {
   color: #000000;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   ;
   background-image: url(../images/rock-sedona.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
+.description-interested,
+.newsletter {
+  text-align: center;
+}
+
 .description h2,
-.services-title-1 {
+.services-title-welcome,
+.description-interested h2 {
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
-.description p
-.services-item p {
+
+.description p,
+.services-item p,
+.description-interested h3 {
+  color: #333333;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.advantages-item-title{
+.advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -72,10 +96,10 @@ body {
 }
 
 .advantages-item-description {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-list,
@@ -85,19 +109,86 @@ text-align: center;
 
 .advantages-title,
 .services-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-transform: uppercase;
-text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-description,
 .services-item p {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.find-hotels {
+  text-align: center;
+  background: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.newsletter-background {
+  background-image: url(../images/newsletter-background.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.page-footer-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.newsletter-button span {
+  color:#FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vkontakte {
+  background-image: url(../images/vkontakte.svg);
+  background-repeat: no-repeat;
+}
+
+.telegram {
+background-image: url(../images/telegram.svg);
+background-repeat: no-repeat;
+}
+
+.youtube {
+  background-image: url(../images/youtube.svg);
+  background-repeat: no-repeat;
+}
+
+.contacts-phone {
+ color: #000000;
+ font-weight: 400;
+ font-size: 40px;
+ line-height: 40px;
+ text-transform: uppercase;
+ text-align: center;
+ text-decoration: none;
 }
 
 .side-description {
