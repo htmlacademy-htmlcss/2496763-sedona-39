@@ -14,12 +14,37 @@
   font-display: swap;
 }
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100%;
+  flex-grow: 1;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
   background-color: #F2F2F2;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 
 }
 
@@ -31,17 +56,92 @@ a {
 
 
 button {
-cursor: pointer;
+  cursor: pointer;
 }
 
-/* .visually-hidden {
-  display: none;
-} */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  flex-grow: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
 }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 70px;
+
+}
+
+.nav-wrapper {
+  display: block;
+  position: relative;
+  align-self: flex-start;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_logo {
+  display: block;
+  position: absolute;
+}
+
+.navigation-logo img {
+  display: block;
+}
+
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_item {
+  list-style: none;
+  padding: 20px 16px;
+}
+
+.navigation-links {
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+
+.navigation-user {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.navigation-user .navigation_item {
+  padding: 22px 12px;
+}
+
+.navigation-links .navigation_link {
+  margin: 0;
+  padding: 20px 16px;
+}
+
 
 .navigation_link {
   font-size: 20px;
@@ -63,13 +163,35 @@ cursor: pointer;
   text-transform: uppercase;
 }
 
+/* MAIN */
+ /* тут не получается!!!! */
+/* .main-index {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+} */
+
+/* как тут сделать flex ?
+.description {
+} */
 
 .hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   color: #000000;
   background-color: #F2F2F2;
   background-image: url(../images/rock-sedona.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
+}
+
+.top-article {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #82B3D3;
 }
 
 .description-interested,
@@ -153,6 +275,11 @@ cursor: pointer;
   background-size: cover;
 }
 
+.page-footer {
+  flex-grow: 0;
+}
+
+
 .page-footer-title {
   color: #FFFFFF;
   font-weight: 700;
@@ -182,11 +309,11 @@ cursor: pointer;
 }
 
 .newsletter .page-footer-catalog {
-color: #333333;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
+  color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 
@@ -301,7 +428,7 @@ text-align: center;
   text-align: center;
   background: none;
   border: none;
-  }
+}
 
 .catalog-title {
   color: #000000;
@@ -345,7 +472,7 @@ text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   background: #756157;
-    }
+}
 
 .card-favorite {
   background: #82B3D3;
@@ -369,24 +496,24 @@ text-align: center;
 
 .four-stars {
   background-image: url(../images/star.svg),
-                    url(../images/star.svg),
-                    url(../images/star.svg),
-                    url(../images/star.svg);
+    url(../images/star.svg),
+    url(../images/star.svg),
+    url(../images/star.svg);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left 50%, 24px 50%, 48px 50%, 72px 50%;
 }
 
 .three-stars {
   background-image: url(../images/star.svg),
-                    url(../images/star.svg),
-                    url(../images/star.svg);
+    url(../images/star.svg),
+    url(../images/star.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 50%, 24px 50%, 48px 50%;
 }
 
 .two-stars {
   background-image: url(../images/star.svg),
-                    url(../images/star.svg);
+    url(../images/star.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: left 50%, 24px 50%;
 }
