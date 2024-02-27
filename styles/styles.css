@@ -45,6 +45,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  background-color: #FFFFFF;
 
 }
 
@@ -77,9 +78,9 @@ button {
   background-color: #ffffff;
   display: flex;
   flex-grow: 0;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  padding: 0 70px;
 
 }
 
@@ -88,28 +89,28 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  margin: 0 70px;
+  /* width: 1200px;
+  margin: 0 70px; */
 
 }
 
-.nav-wrapper {
+/* .nav-wrapper {
   display: block;
   position: relative;
   align-self: flex-start;
   width: 140px;
   margin: 0;
   padding: 0;
-}
+} */
 
 .navigation_logo {
   display: block;
   position: absolute;
 }
 
-.navigation-logo img {
+/* .navigation-logo img {
   display: block;
-}
+} */
 
 
 .navigation-list {
@@ -129,7 +130,7 @@ button {
 }
 
 .navigation-user {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -163,24 +164,12 @@ button {
   text-transform: uppercase;
 }
 
-/* MAIN */
- /* тут не получается!!!! */
-/* .main-index {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-} */
-
-/* как тут сделать flex ?
-.description {
-} */
 
 .hero {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   color: #000000;
   background-color: #F2F2F2;
   background-image: url(../images/rock-sedona.jpg);
@@ -191,7 +180,12 @@ button {
 .top-article {
   display: flex;
   flex-wrap: nowrap;
+  /* width: 1200px; */
   background-color: #82B3D3;
+}
+
+.top-article--reverse {
+flex-direction: row-reverse;
 }
 
 .description-interested,
@@ -211,13 +205,28 @@ button {
 }
 
 .description-main,
-.services-item p,
+.services-top p,
 .description-interested h3 {
   color: #333333;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.advantages-item {
+  display: flex;
+
+  flex-grow: 1;
+  padding: 0;
 }
 
 .advantages-item-title {
@@ -235,9 +244,20 @@ button {
   text-align: center;
 }
 
-.advantages-list,
+
 .services-list {
   text-align: center;
+}
+
+
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+
 }
 
 .advantages-title,
@@ -247,6 +267,12 @@ button {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages-title-font {
+  width: 100%;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-description,
@@ -276,7 +302,22 @@ button {
 }
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
   flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* почему пропали иконки соцсетей */
+.footer-social{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0;
+  padding: 40px 70px 30px 70px;
 }
 
 
@@ -368,15 +409,12 @@ button {
 }
 
 .side-font {
+  width: 100%;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-title-font {
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
 
-}
 
 
 /* Стилизация второй страницы */
