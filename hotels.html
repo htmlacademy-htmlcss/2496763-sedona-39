@@ -27,22 +27,19 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation_item">
             <a class="navigation_link" href="#">
-              <span>
-                Поиск
-              </span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation_item">
             <a class="navigation_link" href="#">
-              <span>
-                Избранное
-              </span>
+              <span class="visually-hidden">Избранное</span>
               <span class="likes-number">12</span>
             </a>
           </li>
           <li class="navigation_item">
             <a class="navigation_link want_here" href="#">Хочу сюда!</a>
           </li>
+        </ul>
       </header>
 
       <main class="main-inner">
@@ -66,8 +63,8 @@
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked>Бассейн</label>
+                      <label class="control"><input class="control-input" type="checkbox" name="pool"
+                          checked>Бассейн</label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
@@ -108,11 +105,11 @@
                   <div class="price-range-range-range">
                     <div class="price-range-range">
                       <label class="price-min" for="min">От</label>
-                      <input class="price-min-input" type="text" id="min" name="min-price" value="0">
+                      <input class="price-min-input price-selection-left" type="text" id="min" name="min-price" value="0">
                     </div>
                     <div class="price-range-range">
                       <label class="price-max" for="max">До</label>
-                      <input class="price-max-input" type="text" id="max" name="max-price" value="9000">
+                      <input class="price-max-input price-selection-right" type="text" id="max" name="max-price" value="9000">
                     </div>
                   </div>
                   <input class="price-range-bar" type="range" min="1" max="10" value="8">
@@ -248,15 +245,17 @@
 
       <footer class="page-footer">
         <section class="newsletter newsletter-background-catalog">
-          <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="page-footer-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <!-- <label for="newsletter-email">Email</label> -->
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button blue-button" type="submit">Подписаться</button>
-          </form>
+          <div class="subscribe-items">
+            <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
+            <p class="page-footer-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <!-- <label for="newsletter-email">Email</label> -->
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <button class="button blue-button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
+
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
