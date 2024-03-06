@@ -51,6 +51,8 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: #FFFFFF;
+  flex-grow: 1;
+  min-height: 100%;
 
 }
 
@@ -111,6 +113,8 @@ button {
   display: block;
   position: absolute;
   width: 140px;
+  /* top: 0;
+  left: 70px; */
 }
 
 /* .navigation-logo img {
@@ -183,6 +187,7 @@ button {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  flex-grow: 1;
 }
 
 
@@ -334,6 +339,8 @@ button {
   padding-left: 0;
   list-style-type: none;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages-item {
@@ -384,10 +391,10 @@ flex-direction: row-reverse;
 
 .services-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 400px;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   text-align: center;
   margin-top: 64px;
   margin-bottom: 96px;
@@ -398,20 +405,18 @@ flex-direction: row-reverse;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* padding: 50px; */
+  padding: 81px 85px;
 }
 
-.services-title {
+/* .services-title {
   padding-top: 183px;
-}
+} */
 
-.services-description {
+/* .services-description {
   padding: 0 85px;
   padding-top: 30px;
   padding-bottom: 81px;
-
-
-}
+} */
 
 .advantages-title,
 .services-title {
@@ -461,7 +466,7 @@ flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0;
   padding: 40px 70px 30px 70px;
 }
@@ -693,6 +698,7 @@ flex-direction: row-reverse;
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
@@ -791,7 +797,7 @@ flex-direction: row-reverse;
 }
 
 .price-min,
-.priice-max {
+.price-max {
   display: flex;
   position: absolute;
   top: 12px;
@@ -910,7 +916,7 @@ flex-direction: row-reverse;
   text-transform: capitalize;
   margin-bottom: 32px;
   text-align: left;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 .control {
