@@ -392,7 +392,6 @@ flex-direction: row-reverse;
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -406,6 +405,7 @@ flex-direction: row-reverse;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 81px 85px;
+  width: 230px;
 }
 
 /* .services-title {
