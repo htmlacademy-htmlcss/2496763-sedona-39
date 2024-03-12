@@ -105,11 +105,13 @@
                   <div class="price-range-range-range">
                     <div class="price-range-range">
                       <label class="price-min" for="min">От</label>
-                      <input class="price-min-input price-selection-left" type="text" id="min" name="min-price" value="0">
+                      <input class="price-min-input price-selection-left" type="text" id="min" name="min-price"
+                        value="0">
                     </div>
                     <div class="price-range-range">
                       <label class="price-max" for="max">До</label>
-                      <input class="price-max-input price-selection-right" type="text" id="max" name="max-price" value="9000">
+                      <input class="price-max-input price-selection-right" type="text" id="max" name="max-price"
+                        value="9000">
                     </div>
                   </div>
                   <input class="price-range-bar" type="range" min="1" max="10" value="8">
@@ -136,14 +138,20 @@
               </select>
             </div>
             <ul class="preview-list">
-              <li class="preview-item">
-                <a class="preview-item-link preview-item-selected" href="#">Карточки</a>
+              <li class="preview-item icon-card">
+                <a class="preview-item-link preview-item-selected" href="#">
+                  <span class="visually-hidden">Карточки</span>
+                </a>
               </li>
-              <li class="preview-item">
-                <a class="preview-item-link" href="#">По одной</a>
+              <li class="preview-item icon-once">
+                <a class="preview-item-link" href="#">
+                  <span class="visually-hidden">По одной</span>
+                </a>
               </li>
-              <li class="preview-item">
-                <a class="preview-item-link" href="#">Список</a>
+              <li class="preview-item icon-list">
+                <a class="preview-item-link" href="#">
+                  <span class="visually-hidden">Список</span>
+                </a>
               </li>
             </ul>
           </section>
@@ -159,8 +167,11 @@
                 </a>
                 <p class="hotels-card-description">Гостиница</p>
                 <p class="hotels-card-price">от 4000 ₽</p>
-                <a class="card-details button-decoration" href="#">Подробнее</a>
-                <button class="card-favorite button-decoration" type="button">В избранное</button>
+                <a class="button-decoration" href="#">Подробнее</a>
+                <!-- <a class="card-details button-decoration" href="#">Подробнее</a> -->
+                <button class="button-decoration button-decoration-blue" type="button">В избранное</button>
+                <!-- <button class="card-favorite button-decoration" type="button">В избранное</button> -->
+
                 <p class="four-stars">
                   <span class="visually-hidden">Отель 4 звезды</span>
                 </p>
@@ -174,9 +185,12 @@
                 </a>
                 <p class="hotels-card-description">Гостиница</p>
                 <p class="hotels-card-price">от 5000 ₽</p>
-                <a class="card-details button-decoration" href="#">Подробнее</a>
-                <button class="card-favorite button-decoration card-favorite-villas" type="button">В
+                <a class="button-decoration" href="#">Подробнее</a>
+                <!-- <a class="card-details button-decoration" href="#">Подробнее</a> -->
+                <button class="button-decoration button-decoration-green" type="button">В
                   избранном</button>
+                  <!-- <button class="card-favorite button-decoration card-favorite-villas" type="button">В
+                    избранном</button> -->
                 <p class="four-stars">
                   <span class="visually-hidden">Отель 4 звезды</span>
                 </p>
@@ -190,8 +204,10 @@
                 </a>
                 <p class="hotels-card-description">Гостиница</p>
                 <p class="hotels-card-price">от 2500 ₽</p>
-                <a class="card-details button-decoration" href="#">Подробнее</a>
-                <button class="card-favorite button-decoration" type="button">В избранное</button>
+                <a class="button-decoration" href="#">Подробнее</a>
+                <button class="button-decoration button-decoration-blue" type="button">В избранное</button>
+                <!-- <a class="card-details button-decoration" href="#">Подробнее</a> -->
+                <!-- <button class="card-favorite button-decoration" type="button">В избранное</button> -->
                 <p class="three-stars">
                   <span class="visually-hidden">Отель 3 звезды</span>
                 </p>
@@ -205,8 +221,10 @@
                 </a>
                 <p class="hotels-card-description">Гостиница</p>
                 <p class="hotels-card-price">от 1500 ₽</p>
-                <a class="card-details button-decoration" href="#">Подробнее</a>
-                <button class="card-favorite button-decoration" type="button">В избранное</button>
+                <a class="button-decoration" href="#">Подробнее</a>
+                <button class="button-decoration button-decoration-blue" type="button">В избранное</button>
+                <!-- <a class="card-details button-decoration" href="#">Подробнее</a>
+                <button class="card-favorite button-decoration" type="button">В избранное</button> -->
                 <p class="two-stars">
                   <span class="visually-hidden">Отель 2 звезды</span>
                 </p>
@@ -250,7 +268,8 @@
             <p class="page-footer-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <!-- <label for="newsletter-email">Email</label> -->
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
               <button class="button blue-button" type="submit">Подписаться</button>
             </form>
           </div>

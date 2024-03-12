@@ -21,7 +21,11 @@ html {
   margin: 0;
 }
 
-p, h1, h2, h3, a {
+p,
+h1,
+h2,
+h3,
+a {
   margin: 0;
   padding: 0;
 }
@@ -65,6 +69,7 @@ a {
 
 button {
   cursor: pointer;
+  font-family: "PT Sans";
 }
 
 .visually-hidden {
@@ -254,7 +259,7 @@ button {
   text-align: center;
 }
 
-.services-title-welcome{
+.services-title-welcome {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
@@ -359,7 +364,7 @@ button {
 }
 
 .top-article--reverse {
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .advantages-item-title {
@@ -459,8 +464,8 @@ flex-direction: row-reverse;
   flex-shrink: 0; */
 }
 
-/* почему пропали иконки соцсетей */
-.footer-social{
+
+.footer-social {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -665,7 +670,7 @@ flex-direction: row-reverse;
   font-weight: 700;
   line-height: 78px;
   margin-bottom: 8px;
-  }
+}
 
 .inner-header {
   display: flex;
@@ -736,7 +741,7 @@ flex-direction: row-reverse;
 .price-range,
 .apply-reset {
   border: none;
-  }
+}
 
 /* .catalog-filter-group {
   display: flex;
@@ -769,7 +774,7 @@ flex-direction: row-reverse;
 }
 
 
-.price-range{
+.price-range {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -890,8 +895,9 @@ flex-direction: row-reverse;
 }
 
 .preview-list {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  column-gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -902,7 +908,61 @@ flex-direction: row-reverse;
   height: 48px;
 }
 
+.preview-item-link {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 4px;
+}
 
+.icon-card {
+  background-image: url(../images/icon-card.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.icon-once {
+  background-image: url(../images/icon-once.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.icon-list {
+  background-image: url(../images/icon-list.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* пробую гриды */
+
+.hotels-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+}
+
+.hotels-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr;
+  gap: 16px 20px;
+  width: 340px;
+  padding: 20px;
+}
+
+.hotels-card-link {
+  grid-column: 1/-1;
+  text-decoration: none;
+}
 
 
 
@@ -979,15 +1039,19 @@ flex-direction: row-reverse;
   font-weight: 700;
   text-transform: uppercase;
   background: #756157;
-}
-
-.card-favorite {
-  background: #82B3D3;
+  font-family: "PT Sans";
   border: none;
+  border-radius: 4px;
 }
 
-.card-favorite-villas {
+.button-decoration-blue {
+  background: #82B3D3;
+  padding: 8px 20px;
+}
+
+.button-decoration-green {
   background: #7DB54F;
+  padding: 8px 18px;
 }
 
 .hotels-card-rating {
@@ -997,6 +1061,7 @@ flex-direction: row-reverse;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  padding: 9px 22px 8px 23px;
 }
 
 /* rating stars */
