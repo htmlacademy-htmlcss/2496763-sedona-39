@@ -158,7 +158,7 @@ button {
 }
 
 .navigation-user .navigation_item {
-  padding: 0 12px;
+  padding-left: 26px;
 }
 
 .navigation-links .navigation_link {
@@ -178,24 +178,25 @@ button {
   text-decoration: none;
 }
 
-.navigation_link:hover,
-.navigation_link:hover.search,
-.navigation_link:hover.heart {
-  background-color: rgba(138, 191, 226, 0.8);
+.navigation-links .navigation_link:hover,
+.navigation-user .navigation_link:hover.search,
+.navigation-user .navigation_link:hover.heart {
+  opacity: 0.3;
 }
 
 .navigation_link:focus,
 .navigation_link:focus.search,
 .navigation_link:focus.heart {
   background-color: rgba(138, 191, 226, 0.6);
-  outline: 2px solid rgba(138, 191, 226, 0.8);
+  /* outline: 2px solid rgba(138, 191, 226, 0.8); */
 }
 
-.navigation_link:active,
-.navigation_link:active.search,
-.navigation_link:active.heart {
-  background-color: #ffffff;
-  outline: 2px solid rgba(138, 191, 226, 0.8);
+.navigation-links .navigation_link:active,
+.navigation-user .navigation_link:active.search,
+.navigation-user .navigation_link:active.heart {
+  /* background-color: #ffffff;
+  outline: 2px solid rgba(138, 191, 226, 0.8); */
+  opacity: 0.6;
 }
 
 .navigation_link_current {
@@ -232,8 +233,8 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 10px;
-  top: -9px;
+  left: 8px;
+  top: -11px;
   text-align: center;
   font-size: 10px;
   line-height: 10px;
@@ -258,6 +259,7 @@ button {
   border-radius: 4px;
   border: none;
   outline: none;
+  margin-left: 5px;
 }
 
 .want_here:hover,
@@ -287,7 +289,7 @@ button {
 
 
 .hero {
-
+  background-color: #b8c5ce;
   background-image: url(../images/zig-zag.svg), url(../images/rock-sedona.jpg);
   background-position: left bottom, left top;
   background-repeat: no-repeat;
@@ -349,7 +351,7 @@ button {
   line-height: 36px;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   padding-left: 347.5px;
@@ -379,6 +381,12 @@ button {
   line-height: 26px;
   text-align: center;
 }
+
+.services-welcome {
+  padding-left: 355px;
+  padding-right: 355px;
+}
+
 
 .description-text {
   color: #333333;
@@ -471,7 +479,7 @@ button {
 .advantages-item-title {
   display: block;
   position: relative;
-  margin-bottom: 62px;
+  padding-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -485,7 +493,7 @@ button {
   position: absolute;
   width: 60px;
   height: 2px;
-  top: 86px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.3);
@@ -518,8 +526,8 @@ button {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 64px;
-  margin-bottom: 96px;
+  margin-top: 63px;
+  margin-bottom: 94px;
 
 }
 
@@ -527,7 +535,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 81px 85px;
+  padding: 60px 85px;
   width: 230px;
 }
 
@@ -541,12 +549,12 @@ button {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 62px;
-  padding: 0 30px;
+  margin-bottom: 38px;
+  padding: 23px 30px;
 }
 
 .services-title-dop {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .advantages-title::after {
@@ -555,7 +563,7 @@ button {
   position: absolute;
   width: 60px;
   height: 2px;
-  top: 86px;
+  bottom: -9px;
   left: 85px;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -573,6 +581,8 @@ button {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding-top: 0;
+  margin-bottom: 23px;
 }
 
 
@@ -603,6 +613,7 @@ button {
 
 
 .newsletter-background {
+  background-color: #6b7f8d;
   background-image: url(../images/newsletter-background.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -627,7 +638,7 @@ button {
   box-sizing: border-box;
   /* width: 1200px; */
   margin: 0;
-  padding: 40px 70px 30px 70px;
+  padding: 36px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -653,15 +664,15 @@ button {
   padding: 20px;
 }
 
-.footer-social-item:hover path {
+.social-button:hover path {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.social-button:focus path {
   fill: #68a2ca;
 }
 
-.footer-social-item:focus path {
-  fill: #68a2ca;
-}
-
-.footer-social-item:active path {
+.social-button:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -681,12 +692,12 @@ button {
   align-items: center;
 }
 
-.academy-logo:hover path,
-.academy-logo:focus path {
+.author-logo:hover path,
+.author-logo:focus path {
   fill: #756157;
 }
 
-.academy-logo:active path {
+.author-logo:active path {
   fill: #756157;
   opacity: 0.3;
 }
@@ -710,7 +721,7 @@ button {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .newsletter-form {
@@ -733,6 +744,7 @@ button {
   outline: none;
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
+  font-family: inherit;
 }
 
 .field:hover {
@@ -957,9 +969,9 @@ button {
   top: 7px;
 }
 
-/* .home-breadcrumbs :last-child::after {
+.breadcrumbs-item:first-child .breadcrumbs-link::after {
   display: none;
-} */
+}
 
 .breadcrumbs-link {
   color: #FFFFFF;
@@ -991,12 +1003,15 @@ button {
   display: flex;
   margin: 0;
   padding: 0;
+  gap: 68px;
 }
 
 .catalog-filter-group,
 .price-range,
 .apply-reset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* .catalog-filter-group {
@@ -1038,7 +1053,7 @@ button {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+  margin-left: 82px;
 }
 
 .price-range-range-range {
@@ -1179,8 +1194,7 @@ button {
   padding: 0;
   padding-top: 56px;
   margin: 0;
-  margin-left: 70px;
-}
+  }
 
 .catalog-wrapper {
   display: flex;
@@ -1424,6 +1438,7 @@ button {
   background: none;
   border: none;
   padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .reset-button:focus {
@@ -1465,11 +1480,13 @@ button {
   outline: none;
   background-position: center right 19px;
   background-repeat: no-repeat;
+  font-family: inherit;
 }
 
 .select-control:hover,
 .select-control:focus {
   border: 2px solid rgb(104, 162, 202, 1);
+  cursor: pointer;
 }
 
 .select-control:disabled {
@@ -1692,6 +1709,10 @@ button {
   border-radius: 30px;
 }
 
+.modal-close-button:hover::before {
+  background-color: #E6E6E6;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1708,6 +1729,8 @@ button {
   cursor: pointer;
 }
 
+
+
 .modal-title {
   margin: 0;
   padding: 0;
@@ -1716,6 +1739,7 @@ button {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  padding-right: 130px;
 }
 
 .modal-form {
@@ -1856,8 +1880,8 @@ button {
   margin-right: auto;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.button-info:hover + .tooltip-text,
+.button-info:focus + .tooltip-text {
   display: block;
 }
 
