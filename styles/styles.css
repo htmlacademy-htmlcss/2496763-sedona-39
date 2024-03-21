@@ -21,14 +21,14 @@ html {
   margin: 0;
 }
 
-p,
+/* p,
 h1,
 h2,
 h3,
 a {
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   margin: 0 auto;
@@ -63,14 +63,13 @@ body {
 /* убираем подчёркивание всех ссылок */
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 
 
-button {
+/* button {
   cursor: pointer;
   font-family: "PT Sans";
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -328,7 +327,7 @@ button {
 
 .subscribe-items {
   width: 684px;
-  padding: 96px 258px 104px 258px;
+  padding: 94px 258px 104px 258px;
   margin: 0;
 }
 
@@ -351,12 +350,12 @@ button {
   line-height: 36px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: -1px;
   text-transform: uppercase;
   text-align: center;
   padding-left: 347.5px;
   padding-right: 347.5px;
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 .description-title {
@@ -364,7 +363,7 @@ button {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -380,6 +379,7 @@ button {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .services-welcome {
@@ -441,7 +441,6 @@ button {
 .description-interested {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
   margin-bottom: 96px;
 }
@@ -479,7 +478,7 @@ button {
 .advantages-item-title {
   display: block;
   position: relative;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -493,7 +492,7 @@ button {
   position: absolute;
   width: 60px;
   height: 2px;
-  bottom: 30px;
+  bottom: 9px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.3);
@@ -506,6 +505,9 @@ button {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: -3px;
 }
 
 .services {
@@ -535,7 +537,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 60px 85px;
+  padding: 45px 85px;
   width: 230px;
 }
 
@@ -549,12 +551,12 @@ button {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 38px;
-  padding: 23px 30px;
+  margin-bottom: 32px;
+  padding: 11px 30px;
 }
 
 .services-title-dop {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .advantages-title::after {
@@ -563,8 +565,8 @@ button {
   position: absolute;
   width: 60px;
   height: 2px;
-  bottom: -9px;
-  left: 85px;
+  bottom: -20px;
+  left: 88px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -581,8 +583,8 @@ button {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  padding-top: 0;
-  margin-bottom: 23px;
+  padding-top: 1;
+  margin-bottom: 34px;
 }
 
 
@@ -592,7 +594,7 @@ button {
   width: 75px;
   height: 72px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -624,9 +626,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* padding-top: 96px; */
-  /* flex-grow: 0;
-  flex-shrink: 0; */
 }
 
 
@@ -638,7 +637,7 @@ button {
   box-sizing: border-box;
   /* width: 1200px; */
   margin: 0;
-  padding: 36px 70px 30px 70px;
+  padding: 45px 70px 35px 72px;
 }
 
 .footer-social-list {
@@ -649,7 +648,7 @@ button {
   width: 142px;
   min-height: 40px;
   padding: 0;
-  margin: 0;
+  margin: -1px;
 }
 
 .footer-social-item {
@@ -661,7 +660,9 @@ button {
 
 .social-button {
   display: flex;
-  padding: 20px;
+  padding: 12px;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .social-button:hover path {
@@ -800,6 +801,8 @@ button {
   border-radius: 0 4px 4px 0;
   background-color: #82B3D3;
   border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .blue-button:hover,
@@ -823,9 +826,12 @@ button {
   line-height: 20px;
   padding: 8px 50px;
   min-width: 191px;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .newsletter-button {
+  cursor: pointer;
   font-family: inherit;
   background-color: rgba(130, 179, 211, 1);
 }
@@ -871,10 +877,7 @@ button {
 .side-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* color: #FFFFFF; */
-  /* background: #82B3D3; */
-  padding: 90px 85px;
+  padding: 79px 81px;
 }
 
 .side-font {
@@ -901,6 +904,8 @@ button {
   font-weight: 700;
   line-height: 78px;
   margin-bottom: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header {
@@ -915,6 +920,7 @@ button {
   padding: 35px 70px 70px 70px;
   margin: 0;
   box-sizing: border-box;
+  margin-bottom: -12px;
 }
 
 .catalog-filter-area {
@@ -940,8 +946,9 @@ button {
   list-style: none;
   text-align: left;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0;
+  margin-top: 7px;
 }
 
 .breadcrumbs-item {
@@ -952,15 +959,19 @@ button {
   padding: 0;
   margin-right: 12px;
   position: relative;
-  padding-left: 30px;
+  padding-left: 16px;
 }
 
-.breadcrumbs-link::after {
+.breadcrumbs-item:first-child {
+  padding-left: 0;
+}
+
+.breadcrumbs-item::after {
   content: "";
   display: block;
   width: 10px;
   height: 10px;
-  margin-left: 10px;
+  margin-left: -1pxpx;
   background-image: url(../images/breadcrumbs.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -969,7 +980,7 @@ button {
   top: 7px;
 }
 
-.breadcrumbs-item:first-child .breadcrumbs-link::after {
+.breadcrumbs-item:first-child::after {
   display: none;
 }
 
@@ -978,23 +989,25 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  cursor: pointer;
 }
 
-.breadcrumbs-link-hotel:hover {
+.breadcrumbs-link[href]:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-hotel:active {
+.breadcrumbs-link[href]:active {
   opacity: 0.3;
 }
 
 .home-breadcrumbs {
   display: flex;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 13px;
   background-image: url(../images/home-breadcrumbs.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: left 50%, 24px 50%;
+  background-position: left 50% center;
+  background-size: contain;
 }
 
 /* Фильтры */
@@ -1128,7 +1141,7 @@ button {
 .range {
   display: block;
   margin: 0;
-  margin-top: 29px;
+  margin-top: 27px;
   padding: 0;
 }
 
@@ -1225,6 +1238,16 @@ button {
   padding: 0;
 }
 
+.catalog-title-value {
+  display: block;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0 0 0 9px;
+  padding: 0;
+}
+
 .catalog-wrapper-list {
   display: flex;
   justify-content: center;
@@ -1305,16 +1328,16 @@ button {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 67px;
 
 }
 
 .hotels-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  gap: 16px 20px;
+  gap: 1px 20px;
   width: 340px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   box-sizing: border-box;
   outline: 1px solid rgb(230, 230, 230);
   border-radius: 4px;
@@ -1397,17 +1420,17 @@ button {
 .control:hover .control-mark-checkbox,
 .control:hover .control-mark-radio {
   background: rgb(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .control:hover .control-label-checkbox,
 .control:hover .control-label-radio {
   color: rgb(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
-.control-mark-checkbox:focus,
-.control-mark-checkbox:focus-visible,
-.control-mark-radio:focus,
-.control-mark-radio:focus-visible {
+.control-input:focus-visible + .control-mark-checkbox,
+.control-input:focus-visible +.control-mark-radio{
   outline: 3px solid #83b3d3;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -1429,6 +1452,8 @@ button {
 
 
 .reset-button {
+  font-family: inherit;
+  cursor: pointer;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
@@ -1499,6 +1524,8 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin-top: 12px;
+  margin-bottom: -6px;
 }
 
 .hotels-card-description {
@@ -1510,6 +1537,10 @@ button {
 
 .hotels-card-price {
   text-align: right;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 21px;
 }
 
 .button-decoration {
@@ -1521,9 +1552,10 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   background: #756157;
-  font-family: "PT Sans";
+  font-family: inherit;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-decoration:hover,
@@ -1617,6 +1649,7 @@ button {
   padding: 0;
   gap: 8px;
   list-style: none;
+  margin-bottom: 3px;
 }
 
 .pagination-link {
@@ -1709,9 +1742,7 @@ button {
   border-radius: 30px;
 }
 
-.modal-close-button:hover::before {
-  background-color: #E6E6E6;
-}
+
 
 .modal-close-button {
   position: absolute;
@@ -1727,6 +1758,24 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  outline: none;
+  opacity: 0.3;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 
@@ -1758,12 +1807,13 @@ button {
 .field-input {
   margin: 0;
   padding: 12px 20px;
-  font: inherit;
   font-weight: 700;
   line-height: 24px;
   background: #f2f2f2;
   border: none;
   border-radius: 4px;
+  font-family: inherit;
+  font-size: 18px;
 }
 
 .field-group input::placeholder {
@@ -1772,7 +1822,7 @@ button {
 
 .field-label {
   margin: auto 0;
-  padding-right: 24px;
+  padding-right: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1817,6 +1867,7 @@ button {
   width: 26px;
   height: 26px;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .button-calendar {
@@ -1843,7 +1894,15 @@ button {
   justify-content: center;
   gap: 11px;
   position: relative;
-  margin-top: 5px;
+  padding-top: 5px;
+  padding-right: 23px;
+  margin: 0;
+}
+
+.children {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .tooltip-text {
@@ -1899,6 +1958,7 @@ button {
   cursor: pointer;
 }
 
+
 .icon-min {
   position: absolute;
   top: 0;
@@ -1951,7 +2011,7 @@ button {
 
 .modal-form-button {
   padding: 10px;
-  margin-top: 48px;
+  margin-top: 49px;
   font-weight: 700;
   font-size: 20px;
   border-radius: 10px;

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Седона-Небольшой городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
   </head>
 
   <body>
@@ -72,17 +73,18 @@
               </div>
             </li>
             <li class="advantages-item">
-              <div class="side-description side-font">
-                <h3 class="advantages-title">Мало туристов</h3>
-                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
-            <li class="advantages-item">
               <div class="side-description advantages-title-font">
                 <h3 class="advantages-title">Красивая дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
+            <li class="advantages-item">
+              <div class="side-description side-font">
+                <h3 class="advantages-title">Мало туристов</h3>
+                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
+
 
             <li class="advantages-item top-article top-article--reverse">
               <div class="side-description">
@@ -266,10 +268,11 @@
               </div>
               <div class="group-counter">
                 <div class="tooltip-wrapper tooltip-label-icon">
+                  <div class="children">
+                  </div>
                   <label class="counter-label tooltip" for="counter-two">Дети:
-                    <span class="visually-hidden"></span>
                     <span class="tooltip">
-                      <button class="button-info tooltip-toggle" id="counter-two" type="button" aria-labelledby="tooltip-label"></button>
+                      <button class="button-info tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                       <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
                         будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
@@ -279,7 +282,7 @@
                   <span class="visually-hidden">Кнопка минус</span>
                   <span class="icon-min"></span>
                 </button>
-                <input class="counter-input" value="2" type="number" name="counter-two" >
+                <input class="counter-input" value="2" type="number" name="counter-two" id="counter-two" >
                 <button class="plus-button" type="button" name="plus">
                   <span class="visually-hidden">кнопка плюс</span>
                   <span class="icon-plus"></span>
