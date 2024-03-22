@@ -10,7 +10,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="navigation_logo" href="index.html">
           <img class="page_header_logo" src="images/logo-sedona.svg" width="140" height="70"
             alt="Герб городка Седона"></a>
@@ -44,13 +44,13 @@
 
       </header>
 
-      <main class="main-index">
-        <section class="hero">
+      <main class="main-index" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
           <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Горы Седоны">
         </section>
 
-        <section class="description">
+        <section class="description" data-test="advantages">
           <div class="description-header">
             <h2 class="description-header-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="description-main">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -95,7 +95,7 @@
             </li>
           </ul>
         </section>
-        <section class="services services-top">
+        <section class="services services-top" data-test="service">
           <h2 class="visually-hidden">Сервис в Седоне</h2>
           <h3 class="services-title-welcome">Приезжайте в Седону отдохнуть в комфорте и уюте!</h3>
           <p class="services-welcome">Опытный персонал и качественное обслуживание!</p>
@@ -114,7 +114,7 @@
             </li>
           </ul>
         </section>
-        <section class="description-interested">
+        <section class="description-interested" data-test="search">
           <div class="description-title-title">
             <h2 class="description-title">Заинтересовались?</h2>
             <p class="description-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
@@ -125,8 +125,8 @@
       </main>
 
 
-      <footer class="page-footer">
-        <section class="newsletter newsletter-background">
+      <footer class="page-footer" data-test="footer">
+        <section class="newsletter newsletter-background" data-test="subscribe">
           <div class="subscribe-items">
             <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
             <p class="page-footer-title-title">Только полезная информация и никакого спама,<br> честное бойскаутское!
@@ -139,7 +139,7 @@
           </div>
         </section>
 
-        <section class="footer-social">
+        <section class="footer-social" data-test="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item vkontakte">
@@ -226,7 +226,7 @@
 
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal-wrapper">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>

@@ -10,7 +10,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="navigation_logo" href="index.html">
           <img class="page_header_logo" src="images/logo-sedona.svg" width="140" height="70"
             alt="Герб городка Седона"></a>
@@ -43,10 +43,10 @@
         </ul>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <div class="inner-header">
           <div class="catalog-filter-area">
-            <section class="main-catalog-header">
+            <section class="main-catalog-header" data-test="hero">
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item"><a class="breadcrumbs-link home-breadcrumbs" href="index.html"><span
@@ -58,7 +58,7 @@
             </section>
             <!-- </header> -->
 
-            <section class="catalog-hotels">
+            <section class="catalog-hotels" data-test="filter">
               <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -160,7 +160,7 @@
 
 
         <div class="catalog-wrapper">
-          <section class="catalog">
+          <section class="catalog" data-test="catalog">
             <p class="catalog-title">Найдено гостиниц:<span class="catalog-title-value">38</span></p>
             <div class="catalog-wrapper-list">
               <select class="select-control" aria-label="Сортировка">
@@ -284,8 +284,8 @@
       </main>
 
 
-      <footer class="page-footer">
-        <section class="newsletter newsletter-background-catalog">
+      <footer class="page-footer" data-test="footer">
+        <section class="newsletter newsletter-background-catalog" data-test="subscribe">
           <div class="subscribe-items">
             <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
             <p class="page-footer-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
