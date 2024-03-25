@@ -21,7 +21,6 @@ html {
   margin: 0;
 }
 
-
 body {
   margin: 0 auto;
   padding: 0;
@@ -35,7 +34,6 @@ body {
   line-height: 24px;
   color: #242424;
   background-color: #F2F2F2;
-
 }
 
 .wrapper {
@@ -57,9 +55,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -80,7 +75,6 @@ a {
   flex-grow: 0;
   padding: 0 70px;
   position: relative;
-
 }
 
 .page_header_logo:hover,
@@ -136,7 +130,6 @@ a {
   margin: 0 16px;
   padding: 20px 0;
 }
-
 
 .navigation_link {
   display: block;
@@ -253,9 +246,6 @@ a {
   flex-grow: 1;
 }
 
-
-
-
 .hero {
   background-color: #b8c5ce;
   background-image: url(../images/zig-zag.svg), url(../images/rock-sedona.jpg);
@@ -279,10 +269,7 @@ a {
 
 .description-header {
   padding: 69px 274px 90px;
-
 }
-
-
 
 .description-interested,
 .newsletter {
@@ -356,7 +343,6 @@ a {
   padding-right: 355px;
 }
 
-
 .description-text {
   color: #333333;
   font-weight: 400;
@@ -414,7 +400,6 @@ a {
   margin-bottom: 96px;
 }
 
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -427,7 +412,6 @@ a {
 
 .advantages-item {
   display: flex;
-  flex-grow: 1;
   padding: 0;
   width: 400px;
 }
@@ -467,8 +451,6 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-
-
 .advantages-item-description {
   font-weight: 400;
   font-size: 18px;
@@ -479,10 +461,15 @@ a {
   margin-top: -3px;
 }
 
+.advantages-logo {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+
 .services {
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -494,7 +481,6 @@ a {
   text-align: center;
   margin-top: 63px;
   margin-bottom: 94px;
-
 }
 
 .services-item {
@@ -534,7 +520,6 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 .advantages-title-font {
   width: 100%;
   color: #000000;
@@ -551,7 +536,6 @@ a {
   margin-bottom: 34px;
 }
 
-
 .services-title::before {
   content: '';
   display: block;
@@ -566,7 +550,6 @@ a {
 
 .icon-home::before {
   background-image: url(../images/icon-home.svg);
-
 }
 
 .icon-food::before {
@@ -591,7 +574,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .footer-social {
   display: flex;
@@ -737,7 +719,6 @@ a {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 .page-footer-catalog {
@@ -848,8 +829,6 @@ a {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
-
-
 
 
 /* Стилизация второй страницы */
@@ -1265,7 +1244,6 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 67px;
-
 }
 
 .hotels-card {
@@ -1284,8 +1262,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .catalog-filter-title,
 .price-range-title {
   display: block;
@@ -1296,7 +1272,6 @@ a {
   text-transform: capitalize;
   margin-bottom: 32px;
   text-align: left;
-  /* margin-right: 70px; */
 }
 
 .control {
@@ -1651,8 +1626,7 @@ a {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
-  ;
+  background-color: rgba(242, 242, 242, 0.8);  ;
 }
 
 .modal-wrapper {
@@ -1662,8 +1636,6 @@ a {
   background-color: #ffffff;
   border-radius: 30px;
 }
-
-
 
 .modal-close-button {
   position: absolute;
@@ -1698,8 +1670,6 @@ a {
   opacity: 0.3;
   pointer-events: none;
 }
-
-
 
 .modal-title {
   margin: 0;
@@ -1795,7 +1765,6 @@ a {
   font-family: inherit;
 }
 
-
 .group-counter {
   display: flex;
   text-align: center;
@@ -1803,12 +1772,10 @@ a {
 
 .tooltip {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   gap: 11px;
   position: relative;
-  padding-top: 5px;
-  padding-right: 23px;
+  padding: 10px 3px 0 10px;
   margin: 0;
 }
 
@@ -1825,13 +1792,13 @@ a {
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 19px 18px 22px 22px;
+  padding: 20px 20px 23px 20px;
   border-radius: 8px;
-  width: 256px;
+  width: 216px;
   position: absolute;
   top: 100%;
   margin-top: 15px;
-  left: 50%;
+  left: 53%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -1859,6 +1826,7 @@ a {
 
 .tooltip-label-icon {
   position: relative;
+  margin-right: 41px;
 }
 
 .min-button,
@@ -1870,7 +1838,6 @@ a {
   height: 48px;
   cursor: pointer;
 }
-
 
 .min-button::before {
   position: absolute;

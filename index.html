@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона-Небольшой городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -104,7 +104,8 @@
             </li>
             <li class="services-item">
               <h3 class="services-title services-title-dop icon-food">Еда</h3>
-              <p class="services-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
+              <p class="services-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не
+                разочаруетесь!</p>
             </li>
             <li class="services-item side-font">
               <h3 class="services-title services-title-dop icon-suvenir">Сувениры</h3>
@@ -130,6 +131,7 @@
             <p class="page-footer-title-title">Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email" class="visually-hidden">Подписаться</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
               <button class="button blue-button" type="submit">Подписаться</button>
@@ -220,6 +222,7 @@
               </svg>
             </a>
           </section>
+        </section>
 
 
       </footer>
@@ -234,46 +237,45 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="field-label" for="check-in">Дата заезда:</label>
-              <input class="field-input" type="text" id="check-in" name="check-in" value="27 апреля 2020">
+              <input class="field-input" type="text" id="check-in" name="check-in" value="27 апреля 2020" required>
               <span class="field-message error">Мы не можем отправить вас в прошлое.</span>
             </div>
 
             <div class="field-group">
               <label class="field-label" for="check-out">Дата выезда:</label>
-              <input class="field-input" type="text" id="check-out" name="check-out" value="1 сентября 2023">
+              <input class="field-input" type="text" id="check-out" name="check-out" value="1 сентября 2023" required>
               <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-group-counter">
               <div class="group-counter">
                 <label class="counter-label" for="counter-one">Взрослые:</label>
-                <button class="min-button" type="button" name="min">
+                <button class="min-button" type="button">
                   <span class="visually-hidden">кнопка минус</span>
                 </button>
                 <input class="counter-input" value="2" type="number" id="counter-one" name="counter-one">
-                <button class="plus-button" type="button" name="plus">
+                <button class="plus-button" type="button">
                   <span class="visually-hidden">кнопка плюс</span>
                 </button>
               </div>
               <div class="group-counter">
+                <label class="counter-label tooltip" for="counter-two">Дети:</label>
                 <div class="tooltip-wrapper tooltip-label-icon">
-                  <div class="children">
-                  </div>
-                  <label class="counter-label tooltip" for="counter-two">Дети:
-                    <span class="tooltip">
-                      <button class="button-info tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
-                        будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </span>
-                  </label>
+                  <span class="tooltip">
+                    <button class="button-info tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
                 </div>
-                <button class="min-button" type="button" name="min">
+                <button class="min-button" type="button">
                   <span class="visually-hidden">Кнопка минус</span>
                 </button>
-                <input class="counter-input" value="2" type="number" name="counter-two" id="counter-two" >
-                <button class="plus-button" type="button" name="plus">
+                <input class="counter-input" value="2" type="number" name="counter-two" id="counter-two">
+                <button class="plus-button" type="button">
                   <span class="visually-hidden">кнопка плюс</span>
                 </button>
               </div>
+
+
 
             </div>
             <button class="modal-form-button blue-button" type="submit">Найти</button>
