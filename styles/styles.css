@@ -1246,6 +1246,15 @@ a {
   margin-bottom: 67px;
 }
 
+.hotels-list::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #E6E6E6;
+  width: 100%;
+  top: 163%;
+}
+
 .hotels-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
