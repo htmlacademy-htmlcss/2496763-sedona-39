@@ -50,11 +50,6 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* убираем подчёркивание всех ссылок */
-a {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -68,7 +63,7 @@ a {
   overflow: hidden;
 }
 
-.page-header {
+.navigation {
   color: #000000;
   background-color: #ffffff;
   display: flex;
